@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260615-190252-0ugn5mmdyhki-service
+spec:
+  selector:
+    app: enterprise-system-20260615-190252-0ugn5mmdyhki
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
